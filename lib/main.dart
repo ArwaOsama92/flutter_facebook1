@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(const MyApp());
@@ -58,95 +59,95 @@ class FacebookApp extends StatelessWidget {
 
       ),
        
-      floatingActionButton: FloatingActionButton( onPressed: () { },
-      child: Icon(Icons.add),
-    ),
-    body: SingleChildScrollView(
-      child: Column(
-      children: [
+      floatingActionButton: FloatingActionButton( onPressed: () { },child: Icon(Icons.add), ),
+body:
+SingleChildScrollView(
+      // scrollDirection: Axis.vertical,
+      child: Column(children: [
         
-         Container(  
-           // 
-           //ignore: sort_child_properties_last
-           child: Text(
-            "C4A.SHOP",
-            style: TextStyle(
-            fontSize: 27.0,
-            height: 1.5   ),
-            ),          
-            alignment: Alignment.center,
-             width: 500,
-             height: 200,
+ Container(
+      child: Text("c4a.shop",style: TextStyle(color: Colors.white,fontSize: 40,height: 2,fontWeight: FontWeight.bold),),
+             alignment: Alignment.center,  width:double.infinity ,
+             height: 280,
              decoration: BoxDecoration(
-                    color:Colors.black12,
-                    shape: BoxShape.circle,
-                    border: Border.all(color:Colors.black,width:3)
-              ),
-      
-        ),
-         Container(  
-           // 
-           //ignore: sort_child_properties_last
-           child: Text(
-            "C4A.SHOP",
-            style: TextStyle(
-            fontSize: 27.0,
-            height: 1.5   ),
-            ),          
-            alignment: Alignment.center,
-             width: 500,
-             height: 200,
-             decoration: BoxDecoration(
-                    color:Colors.black12,
-                    shape: BoxShape.circle,
-                    border: Border.all(color:Colors.black,width:3)
-              ),
-      
-        )
-        ,Text("Arwa", style:TextStyle(backgroundColor: Colors.teal, fontSize:30,)),
-        IconButton( onPressed: () {  }, icon: Icon(Icons.favorite,color: Colors.red,size: 50,),),
-         Container(  
-           // 
-           //ignore: sort_child_properties_last
-           child: Text(
-            "C4A.SHOP",
-            style: TextStyle(
-            fontSize: 27.0,
-            height: 1.5   ),
-            ),          
-            alignment: Alignment.center,
-             width: 500,
-             height: 200,
-             decoration: BoxDecoration(
-                    color:Colors.black12,
-                    shape: BoxShape.circle,
-                    border: Border.all(color:Colors.black,width:3)
-              ),
-      
-        ),
-         Container(  
-           // 
-           //ignore: sort_child_properties_last
-           child: Text(
-            "C4A.SHOP",
-            style: TextStyle(
-            fontSize: 27.0,
-            height: 1.5   ),
-            ),          
-            alignment: Alignment.center,
-             width: 500,
-             height: 200,
-             decoration: BoxDecoration(
-                    color:Colors.black12,
-                    shape: BoxShape.circle,
-                    border: Border.all(color:Colors.black,width:3)
-              ),
-      
-        ),
-        ],
-        ),
+                    color:Colors.blueGrey,
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(15)
+            
     )
- );
+),
+
+SingleChildScrollView(scrollDirection: Axis.horizontal,
+child:Row(children: [
+
+Container(
+      alignment: Alignment.center,  width:150,
+             height: 100,
+             decoration: BoxDecoration(
+             color:Colors.blueGrey,
+             shape: BoxShape.rectangle,
+             borderRadius: BorderRadius.all(Radius.circular(15)),
+             ),
+      child: Text("Ali",style: TextStyle(color: Colors.white,fontSize: 20,height: 2),),
+          margin: EdgeInsets.fromLTRB(20, 30, 20, 30),
+          ),
+          Container(
+      alignment: Alignment.center,  width: 150,
+             height: 100,
+             decoration: BoxDecoration(
+             color:Colors.blueGrey,
+             shape: BoxShape.rectangle,
+             borderRadius: BorderRadius.circular(15)
+             ),
+      child: Text("Hasan",style: TextStyle(color: Colors.white,fontSize: 20,height: 2),),
+          margin: EdgeInsets.fromLTRB(20, 30, 20, 30),
+          ),
+          Container(
+      alignment: Alignment.center,  width: 150,
+             height: 100,
+             decoration: BoxDecoration(
+             color:Colors.blueGrey,
+             shape: BoxShape.rectangle,
+             borderRadius: BorderRadius.circular(15)
+             ),
+      child: Text("Ali",style: TextStyle(color: Colors.white,fontSize: 20,height: 2),),
+          margin: EdgeInsets.fromLTRB(20, 30, 20, 30),
+          ),
+          Container(
+      alignment: Alignment.center,  width:150,
+             height: 100,
+             decoration: BoxDecoration(
+             color:Colors.blueGrey,
+             shape: BoxShape.rectangle,
+              borderRadius: BorderRadius.circular(15)
+             ),
+      child: Text("Hassan",style: TextStyle(color: Colors.white,fontSize: 20,height: 2),),
+          margin: EdgeInsets.fromLTRB(20, 30, 20, 30),
+          )
+
+],)
+),
+
+Container(
+      child: Text("c4a.shop",style: TextStyle(color: Colors.white,fontSize: 40,height: 2,fontWeight: FontWeight.bold),),
+      alignment: Alignment.center,  width: double.infinity ,
+             height: 322,
+             decoration: BoxDecoration(
+                    color:Colors.blueGrey,
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(15)
+    )
+),
+
+ ],)
+               
+),
+
+
+
+   
+
+);
 
   
 }
