@@ -57,7 +57,98 @@ class FacebookApp extends StatelessWidget {
         ],
 
       ),
-    );
+       
+      floatingActionButton: FloatingActionButton( onPressed: () { },
+      child: Icon(Icons.add),
+    ),
+    body: SingleChildScrollView(
+      child: Column(
+      children: [
+        
+         Container(  
+           // 
+           //ignore: sort_child_properties_last
+           child: Text(
+            "C4A.SHOP",
+            style: TextStyle(
+            fontSize: 27.0,
+            height: 1.5   ),
+            ),          
+            alignment: Alignment.center,
+             width: 500,
+             height: 200,
+             decoration: BoxDecoration(
+                    color:Colors.black12,
+                    shape: BoxShape.circle,
+                    border: Border.all(color:Colors.black,width:3)
+              ),
+      
+        ),
+         Container(  
+           // 
+           //ignore: sort_child_properties_last
+           child: Text(
+            "C4A.SHOP",
+            style: TextStyle(
+            fontSize: 27.0,
+            height: 1.5   ),
+            ),          
+            alignment: Alignment.center,
+             width: 500,
+             height: 200,
+             decoration: BoxDecoration(
+                    color:Colors.black12,
+                    shape: BoxShape.circle,
+                    border: Border.all(color:Colors.black,width:3)
+              ),
+      
+        )
+        ,Text("Arwa", style:TextStyle(backgroundColor: Colors.teal, fontSize:30,)),
+        IconButton( onPressed: () {  }, icon: Icon(Icons.favorite,color: Colors.red,size: 50,),),
+         Container(  
+           // 
+           //ignore: sort_child_properties_last
+           child: Text(
+            "C4A.SHOP",
+            style: TextStyle(
+            fontSize: 27.0,
+            height: 1.5   ),
+            ),          
+            alignment: Alignment.center,
+             width: 500,
+             height: 200,
+             decoration: BoxDecoration(
+                    color:Colors.black12,
+                    shape: BoxShape.circle,
+                    border: Border.all(color:Colors.black,width:3)
+              ),
+      
+        ),
+         Container(  
+           // 
+           //ignore: sort_child_properties_last
+           child: Text(
+            "C4A.SHOP",
+            style: TextStyle(
+            fontSize: 27.0,
+            height: 1.5   ),
+            ),          
+            alignment: Alignment.center,
+             width: 500,
+             height: 200,
+             decoration: BoxDecoration(
+                    color:Colors.black12,
+                    shape: BoxShape.circle,
+                    border: Border.all(color:Colors.black,width:3)
+              ),
+      
+        ),
+        ],
+        ),
+    )
+ );
+
+  
 }
 
 }
