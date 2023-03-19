@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: FacebookApp(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -57,6 +58,54 @@ class FacebookApp extends StatelessWidget {
         ],
 
       ),
+     
+     body:Padding(
+      padding: EdgeInsets.only(right:99),
+      child: Container(
+      color:Colors.blueGrey,
+      height:500 ,
+      width: double.infinity,
+      padding: EdgeInsets.all(33),
+      child: Column(
+        children: [
+          Expanded(
+            flex: 1,
+            child: Container(
+              alignment:Alignment.center,
+              child: Text("c4ashop",style: TextStyle(fontSize: 22),),
+                  
+              color:Colors.amber[200],
+              width:100 ,
+              height: 100,
+            ),
+          ),
+
+        Expanded(
+          flex: 1,
+            child: Container(
+              alignment: Alignment.center,
+              child: Text("c4ashop",style: TextStyle(fontSize: 22,color: Colors.white),),
+              color:Colors.blue[300],
+              width:100 ,
+              height: 100,
+          
+          
+            ),
+          ),
+          
+         Expanded(
+          flex: 1,
+          child:  Container(
+            alignment: Alignment.center,
+            child: Text("c4ashop",style: TextStyle(fontSize: 22,color: Colors.white),),
+            color:Colors.red[300],
+            width:100 ,
+            height: 100,
+          ),)
+        ],
+      ),)
+     
+     ),
     );
 }
 
